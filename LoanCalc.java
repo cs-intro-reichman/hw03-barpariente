@@ -56,7 +56,7 @@ public class LoanCalc {
                 x = x + epsilon; 
 
                 for (int i=0; i<n; i++){
-                    loanfinal =  ((loanfinal - x)*rate); 
+                    loanfinal =  ((loanfinal - x)*(1+ (rate/100))); 
 
                     }
                     iterationCounter ++; 
