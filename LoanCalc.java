@@ -87,6 +87,8 @@ public class LoanCalc {
                 }
 
             while ((H-L) > epsilon) {
+                
+                iterationCounter ++;
 
                 loanfinal = loan;
                  x = (H+L)/2;
@@ -94,7 +96,6 @@ public class LoanCalc {
                 for (int j=0; j<n; j++){
                     loanfinal =  ((loanfinal - x)*(1+ (rate/100)));
                     
-                     iterationCounter ++;
 
                     }
                      
