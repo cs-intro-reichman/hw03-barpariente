@@ -27,7 +27,7 @@ public class Calendar1 {
 	 		//// Write the body of the while 		
 	 		if (dayOfWeek == 1) {
 	 		
-	 		System.out.println(dayOfMonth + "/" + month + "/" + year + "sunday"); 
+	 		System.out.println(dayOfMonth + "/" + month + "/" + year + "Sunday"); 
 	 	}
 
 	 	else {

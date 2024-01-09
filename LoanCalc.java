@@ -43,7 +43,7 @@ public class LoanCalc {
 		
        double  loanfinal = loan; 
        double x = (double)(loan/n);
-       int steps = 1;  
+       iterationCounter = 1;  
 
        for (int i=0; i<n; i++){
 
@@ -59,7 +59,7 @@ public class LoanCalc {
                     loanfinal =  ((loanfinal - x)*rate); 
 
                     }
-                    steps ++; 
+                    iterationCounter ++; 
 
                 }
            // System.out.println(x); 
@@ -79,7 +79,7 @@ public class LoanCalc {
     public static double bisectionSolver(double loan, double rate, int n, double epsilon) {  
     	// Replace the following statement with your code
 		double  loanfinal = loan; 
-       int steps = 1;  
+        iterationCounter = 1;  
        double H = loan;
        double L = (double)(loan/n);
        double x = (H+L)/2;  
@@ -97,7 +97,7 @@ public class LoanCalc {
                 for (int j=0; j<n; j++){
                     loanfinal =  ((loanfinal - x)*rate);
                     
-                    steps ++;
+                     iterationCounter ++;
 
                     }
                      

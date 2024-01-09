@@ -31,7 +31,7 @@ public class Calendar0 {
     // Returns true if the given year is a leap year, false otherwise.
     public static boolean isLeapYear(int year) {
         // Replace the following statement with your code
-        if (year%4 == 0) {
+        if ((year%4 == 0 && year%100!= 0) || (year % 400 == 0)) {
             return true;
         }
         return false;
@@ -44,16 +44,16 @@ public class Calendar0 {
     // All the other months have 31 days.
     public static int nDaysInMonth(int month, int year) {
         // Replace the following statement with your code
-        if ((month == 4) || (month == 6) || (month == 11)){
+        if ((month == 4) || (month == 6) || (month == 11)|| (month == 9)){
 
            return 30;
         }
         else if (month == 2) {
             if (isLeapYear(year)) {
-                return 29
+                return 29;
             }
             else {
-                return 28
+                return 28;
             }
         return 31;
     }
