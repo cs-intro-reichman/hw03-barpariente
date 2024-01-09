@@ -62,9 +62,6 @@ public class LoanCalc {
                     iterationCounter ++; 
 
                 }
-           // System.out.println(x); 
-           // System.out.println(loanfinal);
-           // System.out.println(steps);  
 
     	return x;
     }
@@ -85,7 +82,7 @@ public class LoanCalc {
        double x = (H+L)/2;  
 
                 for (int i=0; i <n; i++){
-                    loanfinal = ((loanfinal - x)*rate); 
+                    loanfinal = ((loanfinal - x)*(1+ (rate/100))); 
 
                 }
 
@@ -95,7 +92,7 @@ public class LoanCalc {
                  x = (H+L)/2;
 
                 for (int j=0; j<n; j++){
-                    loanfinal =  ((loanfinal - x)*rate);
+                    loanfinal =  ((loanfinal - x)*(1+ (rate/100)));
                     
                      iterationCounter ++;
 
@@ -122,7 +119,7 @@ public class LoanCalc {
 	private static double endBalance(double loan, double rate, int n, double payment) {
 		// Replace the following statement with your code
 		for (int i=0; i <n; i++){
-                    loan = ((loan - payment)*rate); 
+                    loan = ((loan - payment)*(1+ (rate/100))); 
 
                 }
     	return loan;
