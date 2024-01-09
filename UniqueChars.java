@@ -8,9 +8,12 @@ public class UniqueChars {
 
             char s = a.charAt(i);
 
-            if (a.indexOf(s) == i){
+            if ((a.indexOf(s) == i) && (s != 32)){
                 newA = newA + s;
             }
+           if (s == 32){
+               newA = newA + " ";
+              }
         }
         
         System.out.println(newA); 
