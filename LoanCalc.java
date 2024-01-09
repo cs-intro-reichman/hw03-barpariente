@@ -43,7 +43,7 @@ public class LoanCalc {
 		
        double  loanfinal = loan; 
        double x = (double)(loan/n);
-       iterationCounter = 1;  
+       iterationCounter = 0;  
 
        for (int i=0; i<n; i++){
 
