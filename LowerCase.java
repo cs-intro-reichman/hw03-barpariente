@@ -6,7 +6,7 @@ public class LowerCase {
         char s = ' '; 
         for (int i=0; i < a.length(); i++){
             s = a.charAt(i);
-            // #feedback: you already calculated it and stored the result in s, why do you need to calculate it twice again?
+            // #feedback: you already calculated and stored it in s, why do you need to calculate it twice again?
             if ((s >= 65)&&(s <= 90)){
                 
                 s = ((char)(s+32));  
