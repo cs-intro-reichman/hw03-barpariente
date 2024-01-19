@@ -53,7 +53,8 @@ public class LoanCalc {
 
             while (loanfinal >= epsilon) {
                 loanfinal = loan;
-                x = x + epsilon; 
+		// #feedback: x = x + e equibalent to x += e
+                x += epsilon; 
 
                 for (int i=0; i<n; i++){
                     loanfinal =  ((loanfinal - x)*(1+ (rate/100))); 

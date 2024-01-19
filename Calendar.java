@@ -13,13 +13,14 @@ public class Calendar {
     public static void main(String args[]) {
         
         int debugDaysCounter = 0; 
-        int givenyear = Integer.parseInt(args[0]);
+        // #feedback: pay attention to use camelCase
+        int givenYear = Integer.parseInt(args[0]);
 
 
         //// Write the necessary initialization code, and replace the condition
         //// of the while loop with the necessary condition 
       
-        while (year < givenyear) {
+        while (year < givenYear) {
             //// Write the body of the while        
             
             advance();
@@ -35,7 +36,7 @@ public class Calendar {
             }*/ 
         
         //// Write the necessary ending code here
-        while (year == givenyear) {
+        while (year == givenYear) {
             //// Write the body of the while        
             if (dayOfWeek == 1) {
             
