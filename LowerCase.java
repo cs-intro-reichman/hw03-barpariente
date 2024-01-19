@@ -6,8 +6,8 @@ public class LowerCase {
         char s = ' '; 
         for (int i=0; i < a.length(); i++){
             s = a.charAt(i);
-
-            if (((a.charAt(i)) >= 65)&&(a.charAt(i) <= 90)){
+            // #feedback: you already calculated it and stored the result in s, why do you need to calculate it twice again?
+            if ((s >= 65)&&(s <= 90)){
                 
                 s = ((char)(s+32));  
                 newA = newA + s; 
